@@ -1,0 +1,4 @@
+Contact: mailto:security@quirulum.ch
+Expires: 2025-09-30T18:00:00.000Z
+Preferred-Languages: en, de
+Canonical: https://www.quirulum.ch/security.txt
