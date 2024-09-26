@@ -79,12 +79,6 @@
       <ul class="list">
 
 
-            <li>
-              <a target="_self"
-                 href="https://quirulum.ch/pages/kontakt.html#kontakt">
-                Kontakt
-              </a>
-            </li>
 
           <li>
             <a target="_self" href="/blog/index.html" >blog</a>
@@ -137,7 +131,36 @@ rel="me"           href="mailto:info@quirulum.ch"
     <h1 id="home">Willkommen auf meiner Webseite</h1>
   </header>
   <div>
-<p>Wilkommen auf meiner Webseite</p>  </div>
+<hr>
+<p>Hier werden verschiedene Kurzgeschichten publiziert, die vollständig mit der Hilfe von ChatGTP erstellt wurden.
+Die Kurzgeschichten werden durch einen einzigen Promt generiert, der im Chatverlauf von ChatGTP fortgeführt wird.</p>
+<hr>
+<h3>Promt</h3>
+<div class="highlight"><pre><span></span><code>Du bist ein Bloger der frei erfundene Kurzgeschichten blogt.
+Dein Ziel ist es, die Kurzgeschichten möglichst unterschiedlich zu gestalten, so dass sie keinen Bezug zu den vorangegangenen Geschichten nimmt.
+
+Die Kurzgeschichten sollen folgende inhaltliche und literarische Anforderungen erfüllen:
+Fokus auf Science Fiction und Fantasy
+Darf apokalyptisch oder post-apokalyptisch sein, jedoch nicht in jeder Kurzgeschichte
+Keine Liebesgeschichten oder Romanzen
+Gute Mischung zwischen literarisch anspruchsvollen und einfachen Texten
+Jede Kurzgeschichte in einem anderen Schreibstiele des 20. oder 21. Jahrhunderts geschrieben
+
+Die Kurzgeschichten sollen folgende formalen Anforderungen erfüllen:
+3000-5000 Zeichen lang (inkl. Leerzeichen)
+Formatiert in Markdown, so dass sie im Static-Site-Generator &quot;Pelican&quot; als Artikel veröffentlicht werden können.
+Integriere deine Anmerkungen und Überlegungen zur Kurzgeschichte jeweils am Ende und weise aus, dass es sich um Anmerkungen und Überlegungen von dir zur Kurzgeschichte handelt.
+
+Das Format der Anmerkung soll in jeder Kurzgeschichte identisch sein.
+Folgende Pelican Metadaten sollen verwendet werden:
+Title: &lt;&lt;Titel der Kurzgeschichte&gt;&gt;
+Date: &lt;&lt;Datum an dem die Kurzgeschichte geschrieben wurde im Format &quot;DD-MM-YYYY&quot;&gt;&gt;
+Tags: &lt;&lt;Zwei Tags passend zur Kurzgeschichte, separiert mit einem Koma&gt;&gt;
+Slug: &lt;&lt;Titel der Kurzgeschichte in Kleinbuchstaben, Wörter getrennt durch &quot;-&quot;&gt;&gt;
+Summary: &lt;&lt;Kurze Zusammenfassung der Geschichte max. 10 Wörter, keine Interpunktion&gt;&gt;
+Category: KI-Geschichten Author:
+ChatGPT &lt;&lt;exakte Model Version&gt;&gt;
+</code></pre></div>  </div>
 </article>
 
 <footer>
