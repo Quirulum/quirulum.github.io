@@ -1,186 +1,58 @@
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
 
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-color: #222222;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
 
-    <link rel="stylesheet" type="text/css" href="https://quirulum.ch/theme/stylesheet/style.min.css">
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --card-bg: #1e1e1e;
+                --text-color: #f5f5f5;
+                --shadow: rgba(0, 0, 0, 0.6);
+            }
+        }
 
-    <link id="dark-theme-style" rel="stylesheet" type="text/css"
-          media="(prefers-color-scheme: dark)"
-    href="https://quirulum.ch/theme/stylesheet/dark-theme.min.css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: dark)"
-          href="https://quirulum.ch/theme/pygments/monokai.min.css">
-    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
-              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="https://quirulum.ch/theme/pygments/monokai.min.css">
+        .container {
+            text-align: center;
+            padding: 40px 60px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px var(--shadow);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
 
-
-
-  <link rel="stylesheet" type="text/css" href="https://quirulum.ch/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="https://quirulum.ch/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="https://quirulum.ch/theme/font-awesome/css/solid.css">
-
-
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
-
-  <link href="https://quirulum.ch/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Quirulums Blog Atom">
-
-
-
-
-
-
-
-
- 
-
-    <meta name="author" content="Quirulum" />
-    <meta name="description" content="KI Kurzgeschichten, Blog, Quirulum, AI short stories" />
-  <meta property="og:site_name" content="Quirulums Blog"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="Quirulums Blog"/>
-  <meta property="og:description" content="KI Kurzgeschichten, Blog, Quirulum, AI short stories"/>
-  <meta property="og:locale" content="de_CH.utf8"/>
-  <meta property="og:url" content="https://quirulum.ch"/>
-  <meta property="og:image" content="/images/profile.png">
-
-
-
-  <title>Quirulums Blog &ndash; KI-Kurzgeschichte</title>
-
-
+        h1 {
+            font-weight: normal;
+            margin: 0;
+        }
+    </style>
 </head>
-<body >
-
-<aside>
-  <div>
-    <a href="https://quirulum.ch/">
-      <img src="/images/profile.png" alt="Quirulum" title="Quirulum">
-    </a>
-
-    <h1>
-      <a href="https://quirulum.ch/">Quirulum</a>
-    </h1>
-
-
-
-    <nav>
-      <ul class="list">
-
-          <li>
-            <a target="_self" href="/blog/index.html" >blog</a>
-          </li>
-
-
-            <li>
-              <a target="_self"
-                 href="https://quirulum.ch/pages/kontakt.html#kontakt">
-                Kontakt
-              </a>
-            </li>
-      </ul>
-    </nav>
-
-    <ul class="social">
-      <li>
-        <a class="sc-github"
-           href="https://github.com/Quirulum"
-           target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </li>
-      <li>
-        <a class="sc-rss"
-           href="/feeds/all.atom.xml"
-           target="_blank">
-          <i class="fa-solid fa-rss"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-</aside>
-  <main>
-
-<nav>
-  <a href="https://quirulum.ch/">Home</a>
-
-  <a href="/blog/index.html">Blog</a>
-  <a href="/categories.html">Kategorien</a>
-  <a href="/tags.html">Stichw&ouml;rter</a>
-
-  <a href="https://quirulum.ch/feeds/all.atom.xml">Atom</a>
-
-</nav>
-
-<article class="single">
-  <header>
-    
-    <h1 id="home">KI-Kurzgeschichte</h1>
-  </header>
-  <div>
-<hr>
-<p>Hier werden verschiedene Kurzgeschichten publiziert, die vollständig mit der Hilfe von diversen LLM's (vorwiegend ChatGPT) erstellt wurden.
-Die inhaltlichen und literarischen Anforderungen im Promt können sich mit der Zeit verändern.</p>
-<hr>
-<h2>Promt</h2>
-<div class="highlight"><pre><span></span><code>Du bist ein Bloger der frei erfundene Kurzgeschichten blogt.
-Dein Ziel ist es, die Kurzgeschichte möglichst unterschiedlich zu gestalten.
-
-Die Kurzgeschichte soll folgende inhaltlichen und literarischen Anforderungen erfüllen:
-Gute Mischung zwischen literarisch anspruchsvollen und einfachen Texten
-Jede Kurzgeschichte in einem anderen Schreibstiele des 20. oder 21. Jahrhunderts geschrieben
-&quot;Hier werden jeweils wietere Anforderung zum Inhalt der Kurzgeschichte hinzugefügt.&quot;
-
-Die Kurzgeschichte soll folgende formalen Anforderungen erfüllen:
-3000-5000 Zeichen lang (inkl. Leerzeichen)
-Formatiert in Markdown, so dass sie im Static-Site-Generator &quot;Pelican&quot; als Artikel veröffentlicht werden können.
-Integriere deine Anmerkungen und Überlegungen zur Kurzgeschichte jeweils am Ende und weise aus, dass es sich um Anmerkungen und Überlegungen von dir zur Kurzgeschichte handelt.
-
-Folgende Pelican Metadaten sollen verwendet werden:
-Title: &lt;&lt;Titel der Kurzgeschichte&gt;&gt;
-Date: &lt;&lt;Heutiges Datum im Format &quot;MM-DD-YYYY&quot;&gt;&gt;
-Tags: &lt;&lt;Zwei Tags passend zur Kurzgeschichte, separiert mit einem Koma&gt;&gt;
-Slug: &lt;&lt;Titel der Kurzgeschichte in Kleinbuchstaben, Wörter getrennt durch &quot;-&quot;&gt;&gt;
-Summary: &lt;&lt;Kurze Zusammenfassung der Geschichte max. 10 Wörter, keine Interpunktion&gt;&gt;
-Category: KI-Geschichten
-Author: &lt;&lt;exakte Model Version deines LLM&gt;&gt;
-</code></pre></div>  </div>
-</article>
-
-<footer>
-<p>&copy; 2025 </p>
-<p>
-Gebaut mit <a href="http://getpelican.com" target="_blank">Pelican</a> und dem <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>theme
-  <span class="footer-separator">|</span>
-  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
-  <script id="dark-theme-script"
-          src="https://quirulum.ch/theme/dark-theme/dark-theme.min.js"
-          data-enable-auto-detect-theme="True"
-          data-default-theme="light"
-          type="text/javascript">
-  </script>
-</p></footer>  </main>
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Quirulums Blog ",
-  "url" : "https://quirulum.ch",
-  "image": "/images/profile.png",
-  "description": "KI Kurzgeschichten, Blog, Quirulum, AI short stories"
-}
-</script>
+<body>
+    <div class="container">
+        <h1>"Nothing to see here, come back later."</h1>
+    </div>
 </body>
 </html>
